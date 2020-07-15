@@ -94,7 +94,9 @@ To start and run the local development server,
   ```
   > createdb fyyur
   ```
-4. Apply migration provided to populate the Schema with test data.
+4. Edit SQLALCHEMY_DATABASE_URI config option in config.py file. Replace database-user & password with yours.
+
+5. Apply migration provided to populate the Schema with test data.
 I already exposed static data provided to insert queries and executed them in upgrade function
 ```
   > flask db upgrade
