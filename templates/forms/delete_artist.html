@@ -1,0 +1,21 @@
+{% extends 'layouts/main.html' %}
+{% block title %}Delete Artist{% endblock %}
+{% block content %}
+<div class="container-fluid">
+    <form action="/artists/{{artist_id}}/delete" method="post">
+        <div class="row">
+            <h2>Are you sure you want to delete the following Artist?</h2>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <h3>{{ artist_name }}</h3>
+            </div>
+            <div class="col">
+                <button type="submit" class="btn btn-danger">Delete </button>
+                <a href="{{ url_for('show_artist', artist_id=artist_id) }}" class="btn btn-primary">Cancel</a>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
