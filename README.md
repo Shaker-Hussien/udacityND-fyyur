@@ -102,10 +102,10 @@ I already exposed static data provided to insert queries and executed them in up
   > flask db upgrade
 ```
 
-5. Run the development server:
+6. Run the development server:
   ```
   $ SET FLASK_ENV=development # enables debug mode
   $ python app.py
   ```
 
-6. Navigate to Home page [http://localhost:5000](http://localhost:5000)
+7. Navigate to Home page [http://localhost:5000](http://localhost:5000)
